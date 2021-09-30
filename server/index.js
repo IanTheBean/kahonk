@@ -1,22 +1,26 @@
 //trivia API: https://opentdb.com/api.php?amount=1&category=9&type=multiple
 const https = require('https');
-const app = require('express')();
+express = require("express");
+const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
+const path = require("path");
 const QUESTION_TIME = 10000;
 const LINK = 'https://opentdb.com/api.php?amount=1&category=9&type=multiple';
 const QUESTIONSPERGAME = 10;
 var leaderBoard = [];
 var questionNumber = 1;
 
+app.use(express.static('../client'));
+
 //open a port on the server to listen for new connections
-http.listen(3000, () => {
-	console.log('listening on Port 3000');
+http.listen(1234, () => {
+	console.log('listening on Port 1234');
 });
 
 //send any new connection the client's script
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + '/index.html');
+	res.sendFile(path.join("/Users/ianmorgan/Desktop/Kahonk/client/join/join.html"));
 });
 
 //whenever we get a new player, take their name and create a spot on the leaderboard to store their information
