@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Kahonk</title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <div id="body">
+            <div id="points-container">
+                <span id="name">idk</span>
+                <span id="number">question 0/0</span>
+                <span id="points">idk</span>
+            </div>
+
+            <div id="time_background">
+                <div id="time_slider"></div>
+            </div>
+
+            <h1 id='question'> joining the honk...</h1>
+
+            <div id = buttons>
+                <div id="answers">
+                    <button id="answer0" onclick="ButtonClicked(0)">yes</button>
+                    <button id="answer1" onclick="ButtonClicked(1)">no</button>
+                    <button id="answer2" onclick="ButtonClicked(2)">maybe</button>
+                    <button id="answer3" onclick="ButtonClicked(3)">so</button>
+                </div>	
+            <div id="bottom">
+                <span></span>
+                <span id="streak">0</span>
+                <span></span>
+                <span id="place"></span>
+                <span></span>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>

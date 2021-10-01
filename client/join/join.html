@@ -4,16 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Kahonk</title>
-        <link rel="stylesheet" href="/join/join.css">
     </head>
     <body>
         <div id="body">
-            <div id="name-container">
-                <div id="name">Kahonk</div>
-            </div>
-
-            <input type="text">
-            <input type="text">
+            <span>name: </span><input id="name input" type="text"><br>
+            <span>room: </span><input id="room input" type="text"><br>
+            <button onclick="joinRoom()">join room</button>
+            <button onclick="createRoom()">create room</button>
         </div>
         <script src="/socket.io/socket.io.js"></script>
         <script src="/join/join.js"></script>

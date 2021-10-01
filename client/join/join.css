@@ -1,0 +1,19 @@
+
+body { 
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#name-container {
+    width: 100%;
+    background-color: #806cff;
+    padding:12px;
+    text-align: center;
+}
+
+#name {  
+    color: #ffffff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+

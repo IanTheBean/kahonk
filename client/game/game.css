@@ -1,0 +1,126 @@
+
+            body { 
+                margin: 0px;
+                overflow-x: hidden;
+            }
+
+            #points-container {
+                width: 100%;
+                background-color: #806cff;
+                padding:12px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #number {
+                color: #ffffff;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+
+            #points { 
+                color: #ffffff;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+
+            #name {  
+                color: #ffffff;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+
+            #time_background {
+                height: 12px;
+                width: 100%;
+            }
+
+            #time_slider {
+                height: 100%;
+                width: 40%;
+                background-color: #ab9eff;
+            }
+
+            #question {
+                color: #232323;
+                font-family: 'Trebuchet MS', sans-serif;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            #answer0{
+                font-family: 'Trebuchet MS', sans-serif;
+                background-color: #92ff63;
+                padding: 18px;
+                color: #ffffff;
+                border: none;
+                width: 100%;
+                margin: 3px;
+                font-size: 24px;
+                font-weight: 1900;
+            }
+
+            #answer1{
+                font-family: 'Trebuchet MS', sans-serif;
+                background-color: #ff6363;
+                padding: 18px;
+                color: #ffffff;
+                flex: 2;
+                border: none;
+                width: 100%;
+                margin: 3px;
+                font-size: 24px;
+            font-weight: 1900;
+            }
+
+            #answer2 {
+                font-family: 'Trebuchet MS', sans-serif;
+                background-color: #6cd9f9;
+                padding: 18px;
+                color: #ffffff;
+                flex: 2;
+                border: none;
+                width: 100%;
+                margin: 3px;
+                font-size: 24px;
+                font-weight: 1900;
+            }
+
+            #answer3 {
+                font-family: 'Trebuchet MS', sans-serif;
+                background-color: #fbf44f;
+                padding: 18px;
+                color: #ffffff;
+                flex: 2;
+                border: none;
+                width: 100%;
+                margin: 3px;
+                font-size: 24px;
+                font-weight: 1900;
+            }
+
+            #bottom {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #final_text {
+                text-align: center;
+                font-family: 'Trebuchet MS', sans-serif;
+                color: #000000;
+            }
+
+            #streak {
+                color: #000000;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+
+            #place {
+                color: #000000;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
