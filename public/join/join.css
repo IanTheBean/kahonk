@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#title-bar {
+  width: 100%;
+  background-color: #806cff;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name-field-outer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#name-field-inner {
+  text-align: center;
+}
+
+#title {
+  color: #ffffff;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+#points {
+  color: #ffffff;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+#name {
+  color: #ffffff;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#name-field-text {
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#name-input-field {
+  border: none;
+  border-bottom: 2px dotted black;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  height: 25px;
+  font-size: 20px;
+  color: #6cd9f9;
+}
+
+#name-submit {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #ff6363;
+  color: #ffffff;
+  height: 35px;
+  width: 60px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
