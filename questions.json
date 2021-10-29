@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What name is given to half of a byte (4 bytes)?",
+    "correct_answer": "Nibble",
+    "incorrect_answers": ["Ort", "Scrap", "Snippet"]
+  },
+  {
+    "question": "What country is home to the Kangaroo?",
+    "correct_answer": "Australia",
+    "incorrect_answers": ["Mexico", "China", "India"]
+  },
+  {
+    "question": "The great sphinx has a head of a human and a body of what?",
+    "correct_answer": "Lion",
+    "incorrect_answers": ["Camel", "Aligator", "Eagle"]
+  }
+]
