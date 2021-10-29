@@ -1,17 +1,52 @@
 [
   {
-    "question": "What name is given to half of a byte (4 bytes)?",
-    "correct_answer": "Nibble",
-    "incorrect_answers": ["Ort", "Scrap", "Snippet"]
+    "question": "What year was Rockhurst high school founded?",
+    "correct_answer": "1910",
+    "incorrect_answers": ["1898", "1901", "1925"]
   },
   {
-    "question": "What country is home to the Kangaroo?",
-    "correct_answer": "Australia",
-    "incorrect_answers": ["Mexico", "China", "India"]
+    "question": "How many Rockhurst students participate in varsity sports?",
+    "correct_answer": "583",
+    "incorrect_answers": ["245", "528", "490"]
   },
   {
-    "question": "The great sphinx has a head of a human and a body of what?",
-    "correct_answer": "Lion",
-    "incorrect_answers": ["Camel", "Aligator", "Eagle"]
+    "question": "How many service hours does the Rockhurst student body donate annually?",
+    "correct_answer": "40,000 hours",
+    "incorrect_answers": ["25,000 hours", "47,000 hours", "59,000 hours"]
+  },
+  {
+    "question": "How many varsity sports does Rockhurst offer?",
+    "correct_answer": "11",
+    "incorrect_answers": ["13", "7", "9"]
+  },
+  {
+    "question": "How many state championships does the Rockhurst tennis team have?",
+    "correct_answer": "11",
+    "incorrect_answers": ["7", "9", "6"]
+  },
+  {
+    "question": "How many STEAM-based courses does Rockhurst offer?",
+    "correct_answer": "14",
+    "incorrect_answers": ["12", "10", "8"]
+  },
+  {
+    "question": "How many consecutive state titles has the Rockhurst swim & dive team win?",
+    "correct_answer": "11",
+    "incorrect_answers": ["12", "5", "6"]
+  },
+  {
+    "question": "How many ZIP codes are represented at the Rock?",
+    "correct_answer": "95",
+    "incorrect_answers": ["102", "86", "72"]
+  },
+  {
+    "question": "What year did Rockhurst move to its current location on State Line Road?",
+    "correct_answer": "1962",
+    "incorrect_answers": ["1952", "1940", "1969"]
+  },
+  {
+    "question": "Which of the following is not a student publication at Rockhurst?",
+    "correct_answer": "the Hawklet Press",
+    "incorrect_answers": ["the Prep News", "the Quarry", "The Rock Collection"]
   }
 ]

@@ -11,11 +11,10 @@ var questionNumber = 0;
 
 let rawQuestionData = fs.readFileSync("questions.json");
 const questions = JSON.parse(rawQuestionData);
-console.log(questions);
 
 //open a port on the server to listen for new connections
-http.listen(3000, () => {
-  console.log("listening on Port 3000");
+http.listen(process.env.PORT || 5000, () => {
+  console.log("listening on Port " + process.env.PORT || 5000);
 });
 
 app.use(express.static(__dirname + "/public"));
@@ -51,14 +50,32 @@ function findNameInLeaderBoard(name) {
   }
 }
 
+function updateLeaderBoard() {
+  for (let i = 0; i < leaderBoard.length; i++) {
+    let max = 0;
+    let maxIndex = i;
+    for (let j = i; j < leaderBoard.length; j++) {
+      if (leaderBoard[j].PlayerScore >= max) {
+        max = leaderBoard[j].PlayerScore;
+        maxIndex = j;
+      }
+    }
+    let temp = leaderBoard[i];
+    leaderBoard[i] = leaderBoard[maxIndex];
+    leaderBoard[maxIndex] = temp;
+  }
+}
+
 //take the json recived from the api and distribute it to the players
 function newQuestion() {
+  updateLeaderBoard();
+
   //first we create a json with all of the information a player needs, then we send it
   var info = {
     leaderboard: leaderBoard,
     question: questions[questionNumber],
   };
-  console.log(info);
+  console.log("sending question: " + questions[questionNumber].question);
   io.emit("new question", info);
   if (questionNumber == questions.length - 1) {
     questionNumber = 0;

@@ -4,7 +4,6 @@ var placeText = document.getElementById("place");
 var pointsText = document.getElementById("points");
 var nameText = document.getElementById("name");
 var questionText = document.getElementById("question");
-var questionNumberText = document.getElementById("number");
 var timeSlider = document.getElementById("time_slider");
 var body = document.getElementById("body");
 var answerButtons = [];
@@ -19,7 +18,6 @@ playerName = urlParams.get("name");
 
 for (var i = 0; i < 4; i++) {
   answerButtons.push(document.getElementById("answer" + i));
-  console.log("answer button" + i + "was added");
   answerButtons[i].style.opacity = 0;
   answerButtons[i].disabled = true;
 }
@@ -36,7 +34,6 @@ socket.on("new question", (data) => {
     answerButtons[i].style.opacity = 100;
     answerButtons[i].disabled = false;
   }
-  questionNumberText.innerText = number + "/10";
   console.log(data);
   DisplayQuestion(json);
   UpdateLeaderBoard(leaderboard);
@@ -96,7 +93,7 @@ function ButtonClicked(buttonNum) {
     streakText.style.color = "#000000";
     streak = 0;
   }
-  streakText.innerText = streak;
+  streakText.innerText = "🔥" + streak;
   nameText.innerText = playerName;
   pointsText.innerText = points;
 }
@@ -126,23 +123,4 @@ function UpdateLeaderBoard(leaderBoard) {
     whatToDisplay += currentPlace + "th";
   }
   placeText.innerText = whatToDisplay;
-}
-
-function GameOver(leaderBoard) {
-  console.log(leaderBoard);
-  var maxScore = 0;
-  var bestName = "";
-  for (var i = 0; i < leaderBoard.length; i++) {
-    if (leaderBoard[i].PlayerScore >= maxScore) {
-      maxScore = leaderBoard[i].PlayerScore;
-      bestName = leaderBoard[i].PlayerName;
-    }
-  }
-  body.innerHTML =
-    '<h1 id="final_text">' +
-    bestName +
-    " won with a grand total of " +
-    maxScore +
-    " points!" +
-    "</h1>";
 }
