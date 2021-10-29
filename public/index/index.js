@@ -4,7 +4,6 @@ var placeText = document.getElementById("place");
 var pointsText = document.getElementById("points");
 var nameText = document.getElementById("name");
 var questionText = document.getElementById("question");
-var questionNumberText = document.getElementById("number");
 var timeSlider = document.getElementById("time_slider");
 var body = document.getElementById("body");
 var answerButtons = [];
@@ -36,7 +35,6 @@ socket.on("new question", (data) => {
     answerButtons[i].style.opacity = 100;
     answerButtons[i].disabled = false;
   }
-  questionNumberText.innerText = number + "/10";
   console.log(data);
   DisplayQuestion(json);
   UpdateLeaderBoard(leaderboard);
@@ -96,7 +94,7 @@ function ButtonClicked(buttonNum) {
     streakText.style.color = "#000000";
     streak = 0;
   }
-  streakText.innerText = streak;
+  streakText.innerText = "🔥" + streak;
   nameText.innerText = playerName;
   pointsText.innerText = points;
 }
